@@ -1,0 +1,52 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Integracion Fronteriza</title>
+</head>
+
+
+
+<body>
+    <h1>Puntos de Fronteras Controles Integrados</h1>
+    <div class=" w3l-login-form">
+        <div>
+            <div>
+                <div class=" w3l-form-group">
+                    <label>Ingresar patente</label>
+                </div>
+                <div class=" w3l-form-group" id="cargaPatente">
+                    <input type="text" name="patente" id="patente" maxlength="6" placeholder="Patente"
+                        style="width: 100%; height: 30px" />
+                </div>
+
+                <div class=" w3l-form-group">
+                    <label>Pais del mercosur</label>
+                    <div class="form-group">
+                        <select name="pais" id="LPais" required>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="button">
+                    <input type="button" value="Registrar" onclick="javascript:validar();"
+                        style="width: 100%; height: 30px" />
+                </div>
+
+                <div class="muestra">
+                    <select name="LPatentes" id="LPatentes" size="6" style="width: 100%"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="variables.js"> </script>
+</body>
+
+
+</html>
